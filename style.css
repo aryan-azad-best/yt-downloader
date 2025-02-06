@@ -1,0 +1,64 @@
+/* Glassmorphism Insane UI */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input, select {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+button {
+    background: #ff4b2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff416c;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Add Smooth Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
